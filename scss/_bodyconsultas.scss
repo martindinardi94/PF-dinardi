@@ -1,0 +1,105 @@
+.df-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.df-FAQ {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-direction: column;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+/* Aplico EXTEND / Placeholder en Variables */
+
+.FAQ1,
+.FAQ2,
+.FAQ3,
+.FAQ4 {
+    @extend %FAQ
+}
+
+.form-subtitle {
+    text-transform: uppercase;
+    color: $darkcolor;
+    margin: 10px 0;
+    font-family: $subtitle;
+    text-align: center;
+}
+
+.mainform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background: $lightcolor;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-family: $subtitle;
+    border-radius: 25px;
+    border: solid black;
+    border-bottom: black solid 10px;
+}
+
+.contenido {
+    width: 60%;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+    margin: 10px;
+
+}
+
+.estilo-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-form {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 300px;
+    font-weight: 500;
+}
+
+.input-form {
+    display: block;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 10px 0;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: $subtitle;
+}
+
+.button-form {
+    outline: none;
+    color: #fff;
+    border: none;
+    background-color: $darkcolor;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+    &:hover {
+        background-color: #0e2b7a;
+    }
+}
+

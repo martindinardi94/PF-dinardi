@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $darkcolor;
+    height: 60px;
+    padding: 0 20px;
+    color: $lightcolor;
+    font-size: small;
+    border-top: solid $lightcolor 5px;
+}
+
+.social {
+    font-size: large;
+}

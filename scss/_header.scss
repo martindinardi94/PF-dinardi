@@ -1,0 +1,39 @@
+a,
+li {
+    font-family: $subtitle;
+    font-weight: 500;
+    font-size: 16px;
+    color: $lightcolor;
+    text-decoration: none;
+}
+
+header {
+    background: $darkcolor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+.nav-links {
+    list-style: none;
+
+    li {
+        display: inline-block;
+        padding: 0 20px;
+    }
+
+    a {
+        transition: all 0.3s ease 0s;
+        font-size: smaller;
+    }
+
+    a:hover {
+        color: $hovercolor;
+    }
+}
+
+.logo-img {
+    height: 60px;
+}

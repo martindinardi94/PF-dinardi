@@ -1,0 +1,29 @@
+$darkcolor: #3f3f61;
+$lightcolor: #d6e9fb;
+$hovercolor: #edf0f4;
+$title: 'Lato', sans-serif;
+$subtitle: 'Roboto', sans-serif;
+
+%FAQ {
+    color: rgb(0, 0, 0);
+    background-color: $lightcolor;
+    border: solid black;
+    border-bottom: black solid 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 25px;
+    height: 130px;
+    margin: 15px;
+    padding: 30px;
+    width: auto;
+}
+
+%dfcards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,12 @@
+.df-mainproductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/*uso de extend - placeholder en variables*/
+
+.df-cards1 {
+    @extend %dfcards;
+    margin: 30px;
+}

@@ -1,0 +1,42 @@
+
+.grid-locales{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3px;
+    margin: 0 15%;
+}
+
+/* Aplico MIXIN */
+
+@mixin locales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $lightcolor;
+    border: solid $darkcolor 5px;
+    border-radius: 15px;
+    margin: 10px;
+
+    img {
+        width: 450px;
+        height: 394.81px;
+        border-radius: 10px;
+    }
+
+    h3, p {
+        margin: 10px;
+        text-align: center;
+    } 
+}
+
+.location1 {
+    @include locales
+}
+ 
+.location2 {
+    @include locales
+}
+
